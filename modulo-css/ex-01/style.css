@@ -6,13 +6,21 @@ body {
 header{
     background-color: #248030;
     color:#fff;
+    border-radius: 4px;
 }
 main{
     background-color: #FFFF8C;
+    border-radius: 4px;
+}
+a {
+    color: #248030;
 }
 button{
     background-color: #248030;
+    border-radius: 4px;
+    border: 2px solid #248030;
 }
 footer{
     background-color: #fff;
+    border-radius: 4px;
 }
