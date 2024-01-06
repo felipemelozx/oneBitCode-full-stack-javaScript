@@ -1,30 +1,21 @@
-/* Loan:  
-Também deverá possuir um atributo para as parcelas do empréstimo, sendo que o 
-construtor deve ter como parâmetro o número de parcelas e então deve calcular as parcelas 
-(instâncias de Installments) e armazená-las nesse atributo. */
+const Installment = require("./Installment")
 
+module.exports = class Loan {
+    static #taxaJuros = 1.05
 
-
-class Loan {
-    #taxaDeJurosAnual = 12
-    
-    constructor(value, numberparcelas){
+    constructor(value, numberparcelas) {
         this.value = value
         this.data = new Date()
-        this.numberparcelas = numberparcelas
+        this.numberparcelas = []
+        for(let i = 1; i <= numberparcelas; i++){
+            this.numberparcelas.push(new Installment((value * Loan.#taxaJuros)/ numberparcelas, i ))
+        }
     }
-
-    calcularParcelas(){
-        
+    get taxaJuros() {
+        return Loan.#taxaJuros
     }
-
-
-
-    get taxaDeJurosAnual(){
-        return this.#taxaDeJurosAnual
-    }
-    set modificarTaxa(newtaxa){
-        this.#taxaDeJurosAnual = newtaxa
+    static set taxaJuros(newtaxa) {
+        Loan.#taxaJuros = + 1 + (newtaxa / 100)
     }
 }
 
