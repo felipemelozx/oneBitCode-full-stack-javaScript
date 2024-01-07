@@ -14,33 +14,26 @@ no terminal a situação do IMC da pessoa de acordo com a seguinte tabela:
 Dentro da segunda função, após chamar a função que calcula o IMC, chame a função log do console com uma mensagem qualquer
 para evidenciar o funcionamento assíncrono do código. */
 
-function calculoImc(altura, peso) {
-    return new Promise((resolve, reject) => {
-        if (typeof altura !== 'number' && typeof peso !== 'number') {
-            reject('Altura ou peso invalido, informe uma altura e peso valido.')
-        } else {
-            resolve(peso / (altura * altura))
-        }
-    })
+async function calculoImc(altura, peso) {
+    if (typeof altura !== 'number' && typeof peso !== 'number') {
+        return Promise.reject('Altura ou peso invalido, informe uma altura e peso valido.')
+    } else {
+        return (peso / (altura * altura)).toFixed(2)
+    }
+}
+async function showImc(altura, peso) {
+    try {
+    console.log(`O Resultado do IMC foi de ${(peso / (altura * altura)).toFixed(2)}`)
+    const result = await calculoImc(altura, peso)
 
-}
-function showImc(altura, peso) {
-    calculoImc(altura, peso)
-        .then((result) => {
-            console.log(`O Resultado do IMC foi de ${result}`);
-            if (result < 18.5) {
-                console.log('Situação: magreza');
-            } else if (result < 24.9) {
-                console.log('Situação: normal');
-            } else if (result < 29.9) {
-                console.log('Situação: sobrepeso');
-            } else if (result < 39.9) {
-                console.log('Situação: obesidade');
-            } else {
-                console.log('Situação: obesidade grave');
-            }
-        })
-        .catch((err) => {
-            console.log(err);
-        });
-}
+    
+
+    if (result < 18.5) {console.log('Situação: magreza')
+    } else if (result < 24.9) {console.log('Situação: normal')
+    } else if (result < 29.9) {console.log('Situação: sobrepeso')
+    } else if (result < 39.9) {console.log('Situação: obesidade')
+    } else if (result >= 40){console.log('Situação: obesidade grave')}
+} catch (err) {
+    console.log(err)
+}}
+showImc(1.8)
