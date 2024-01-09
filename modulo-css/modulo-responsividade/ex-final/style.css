@@ -10,11 +10,13 @@
     align-items: center;
     background-color: black;
 }
-img{
+.container img{
     width: 200px;
 }
-img:first-child{
-    width: 45px;
+main  img{
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
 }
 
 button{
@@ -25,16 +27,62 @@ button{
     color: white;
     border: none;
     padding: 15px;
-    border: 2px solid white;
-    border-radius: 10px;
+    
 }
 button:hover{
-    border-color: rgba(213, 40, 40, 0.934);
-    color: rgba(213, 40, 40, 0.934);
-    transition: 0.5s;
+    text-decoration: underline;
 }
 
 div{
     display: flex;
     gap: 10px;
+}
+#title{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+#sectionCards{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:150px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    width: 253px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cards:hover{
+    border: 2px solid black;
+    
+    
+}
+
+.sectionSecond{
+    margin-top: 50px;
+}
+
+
+
+
+
+footer a {
+    
+    color: white;
+    font-size: 30px;
+    
 }
