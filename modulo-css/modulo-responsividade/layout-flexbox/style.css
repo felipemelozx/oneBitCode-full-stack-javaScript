@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 body{
     background-color: darkgray;
     font-family: sans-serif;
@@ -14,12 +13,19 @@ body{
 .container{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 15px;
 }
 .items{
     
     background-color: white;
-    max-width: 200px;
-    min-height: 25vh;
+    width: 200px;
+    height: 25vh;
     border: 2px solid black;
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
