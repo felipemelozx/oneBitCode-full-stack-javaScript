@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: darkgray;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+.items{
+    
+    background-color: white;
+    max-width: 200px;
+    min-height: 25vh;
+    border: 2px solid black;
+    border-radius: 4px;
+}
