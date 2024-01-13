@@ -75,4 +75,58 @@
   padding: 15px 35px;
 }
 
+.container00.container05 {
+  background-image: url(../images/falcon9/01.jpg);
+}
+.container00.container06 {
+  background-image: url(../images/falcon9/02.jpg);
+}
+.container00.carrossel01 {
+  background-image: url(../images/falcon9/03.jpg);
+}
+.container00.carrossel02 {
+  background-image: url(../images/falcon9/04.jpg);
+}
+.container00.carrossel03 {
+  background-image: url(../images/falcon9/05.jpg);
+}
+.container00.carrossel04 {
+  background-image: url(../images/falcon9/06.jpg);
+}
+.container00.carrossel05 {
+  background-image: url(../images/falcon9/07.jpg);
+}
+
+.titleContent {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleFalcon9 {
+  font-size: 90px;
+  font-family: "Rubik";
+  font-weight: 500;
+}
+
+.numbers {
+  background-color: black;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.numbers > h1 {
+  font-size: 90px;
+}
+
+.falcon9Desc {
+  font-size: 22px;
+  width: 640px;
+  line-height: 50px;
+}
+
 /*# sourceMappingURL=style.css.map */

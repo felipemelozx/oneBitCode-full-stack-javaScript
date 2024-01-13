@@ -1,28 +1,35 @@
-.container00{
-  &.container01{
+.container00 {
+  &.container01 {
     background-image: url(../images/home/01.jpg);
-  }&.container02{
+  }
+
+  &.container02 {
     background-image: url(../images/home/03.jpg);
-  }&.container03{
+  }
+
+  &.container03 {
     background-image: url(../images/home/02.gif);
-  }&.container04{
+  }
+
+  &.container04 {
     background-image: url(../images/home/04.jpg);
   }
 }
 
-.titlePadding{
-  padding-top: 200px  ;
+.titlePadding {
+  padding-top: 200px;
 }
 
-.shortTlite{
+.shortTlite {
   width: 550px;
   margin-bottom: -25px;
 }
 
-.mediumTitle{
+.mediumTitle {
   width: 650px;
   margin-bottom: -25px;
 }
-#button{
+
+#button {
   padding: $padding-button;
 }
