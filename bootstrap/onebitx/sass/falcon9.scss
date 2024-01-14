@@ -78,7 +78,7 @@
 #overViewPosition {
   width: 500px;
   margin-left: 13%;
-  padding-top: 100vh;
+  padding-top: 13vh;
 }
 
 .carrosselSlide {
@@ -134,6 +134,7 @@
   }
 }
 
+
 @media (max-width: 1024px) {
   .numbers {
     p {
@@ -146,12 +147,14 @@
   }
 
   #overViewPosition {
-    display: block;
+    display: flex;
+    align-items: center;
     width: 500px;
     margin-left: 13%;
-    padding-top: 20%;
+    padding-top: 13%;
   }
 }
+
 
 @media (max-width: 425px) {
   .titleContent {
