@@ -8,6 +8,10 @@
     background-image: url(../images/falcon9/02.jpg);
   }
 
+  &.container07 {
+    background-image: url(../images/falcon9/12.jpg);
+  }
+
   &.carrossel01 {
     background-image: url(../images/falcon9/03.jpg);
   }
@@ -27,8 +31,8 @@
   &.carrossel05 {
     background-image: url(../images/falcon9/07.jpg);
   }
-}
 
+}
 .titleContent {
   height: 80vh;
   display: flex;
@@ -109,31 +113,38 @@
 .copyOBC {
   color: $copy-obc;
 }
+
 .downloadDesc {
   background-color: black;
   height: 85vh;
   padding-top: 240px;
+
   a {
     text-decoration: none;
     color: $link-hover;
+
     &:hover {
       color: $table-item;
     }
   }
+
   button {
     border: 2px solid white;
     margin-right: 10px;
   }
 }
+
 @media (max-width: 1024px) {
   .numbers {
     p {
       font-size: 18px;
     }
   }
+
   .falcon9Desc {
     font-size: 26px;
   }
+
   #overViewPosition {
     display: block;
     width: 500px;
@@ -141,6 +152,7 @@
     padding-top: 20%;
   }
 }
+
 @media (max-width: 425px) {
   .titleContent {
     display: flex;
@@ -148,17 +160,21 @@
     justify-content: center;
     min-height: 80vh;
   }
+
   .titleFalcon9 {
     font-size: 50px;
   }
+
   .numbers {
     h1 {
       font-size: 40px;
     }
+
     p {
       font-size: 14px;
     }
   }
+
   .containerFalcon9Desc {
     p {
       width: auto;
@@ -166,6 +182,7 @@
       line-height: 30px;
     }
   }
+
   #overViewPosition {
     display: flex;
     height: 90vh;
@@ -174,15 +191,18 @@
     width: auto;
     margin-left: auto;
   }
+
   .titleOverView {
     font-size: 26px;
     font-weight: bold;
   }
+
   .subTitleOvewView {
     font-size: 20px;
     font-weight: 300;
   }
 }
+
 @media (max-width: 510px) {
   .downloadDesc {
     button {
