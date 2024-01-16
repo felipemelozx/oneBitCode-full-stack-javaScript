@@ -16,13 +16,13 @@
   margin-top: 5px;
 }
 
-.logoPc  {
+.logoPc {
   width: 250px;
   margin-left: -10px;
   margin-right: 20px;
 }
 
-.footer{
+.footer {
   background-color: black;
   height: 15vh;
   font-size: 12px;
@@ -30,14 +30,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  a{
+
+  a {
     text-decoration: none;
     color: white;
-    &:hover{
+
+    &:hover {
       color: $link-hover;
     }
   }
 }
+
+.email a  {
+  text-decoration: none;
+  color: $link-hover;
+}
+
 .downloadDesc {
   background-color: black;
   height: 85vh;
