@@ -44,6 +44,23 @@
   color: #b9b9b9;
 }
 
+.downloadDesc {
+  background-color: black;
+  height: 85vh;
+  padding-top: 240px;
+}
+.downloadDesc a {
+  text-decoration: none;
+  color: #b9b9b9;
+}
+.downloadDesc a:hover {
+  color: #d8d8d8;
+}
+.downloadDesc button {
+  border: 2px solid white;
+  margin-right: 10px;
+}
+
 .container00.container01 {
   background-image: url(../images/home/01.jpg);
 }
@@ -175,23 +192,6 @@
   color: #555252;
 }
 
-.downloadDesc {
-  background-color: black;
-  height: 85vh;
-  padding-top: 240px;
-}
-.downloadDesc a {
-  text-decoration: none;
-  color: #b9b9b9;
-}
-.downloadDesc a:hover {
-  color: #d8d8d8;
-}
-.downloadDesc button {
-  border: 2px solid white;
-  margin-right: 10px;
-}
-
 @media (max-width: 1024px) {
   .numbers p {
     font-size: 18px;
@@ -249,6 +249,41 @@
   .downloadDesc button {
     margin: 10px 0px;
   }
+}
+.container00.container08 {
+  background-image: url(../images/humanFlight/01.jpg);
+}
+.container00.container09 {
+  background-image: url(../images/humanFlight/02.jpg);
+}
+.container00.container10 {
+  background-image: url(../images/humanFlight/03.jpg);
+}
+.container00.container11 {
+  background-image: url(../images/humanFlight/04.jpg);
+}
+.container00.container12 {
+  background-image: url(../images/humanFlight/05.jpg);
+}
+
+.container01Content {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container01Content .titleHuman {
+  font-size: 120px;
+}
+.container01Content .subTitleHuman {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: 300;
+}
+.container01Content img {
+  width: 130px;
 }
 
 /*# sourceMappingURL=style.css.map */
