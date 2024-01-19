@@ -1,4 +1,4 @@
-import './App.css'
+
 import Profile from './componentes/Profile/index'
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <Profile
+      <Profile 
         avatar={'../../../public/imagem-01.png'}
         name={'felipe'}
         bio={'oii sou um Desenvolvedor web.'}
