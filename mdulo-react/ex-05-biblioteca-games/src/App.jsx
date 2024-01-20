@@ -1,37 +1,10 @@
-import { useState } from 'react'
+
+import useGameColletion from './Hooks/useGameColletion'
 import Game from './components/Game'
 import NewGameForm from './components/NewGameForm'
 
 export default function App() {
-  const [games, setGames] = useState(() => {
-    const storedGames = localStorage.getItem("obc-game-lib")
-    if (!storedGames) return []
-    const gameArray = JSON.parse(storedGames)
-    return gameArray
-  })
-  const [title, setTitle] = useState('')
-  const [cover, setCover] = useState('')
-
-
-  const addGame = ({ title, cover }) => {
-    const id = Math.floor(Math.random() * 10000000)
-    const game = { id, title, cover }
-    setGames(state => {
-      const newState = [...state, game]
-      localStorage.setItem("obc-game-lib", JSON.stringify(newState))
-      return newState
-    })
-  }
-
-  const removeGame = (id) => {
-    setGames((state) => {
-      const newState = state.filter(game => game.id !== id)
-      localStorage.setItem("obc-game-lib", JSON.stringify(newState))
-      return newState
-    })
-  }
-
-
+  const {games, addGame,removeGame} = useGameColletion()
   return (
     <div className="app">
       <h1>Biblioteca de jogos</h1>
