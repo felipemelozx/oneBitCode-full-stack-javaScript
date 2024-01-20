@@ -1,13 +1,15 @@
-import { useState } from 'react'
+import { useState } from "react";
+import NewForm from "./components/NewForm";
 
-function App() {
-  const [count, setCount] = useState(0)
 
+export default function App() {
+  
   return (
-   <div className='App'>
-    <h1>ola</h1>
-   </div>
+    <div className='App'>
+      <h1>Seção de Comentário</h1>
+      <NewForm/>
+    </div>
   )
 }
 
-export default App
+
