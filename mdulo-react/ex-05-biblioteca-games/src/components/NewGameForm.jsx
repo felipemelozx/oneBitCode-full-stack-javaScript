@@ -1,27 +1,22 @@
 import { useState } from 'react'
+import { TextInput } from './TextInput'
 
-export default function NewGameForm({ addGame, handleDubmit} ) {
+export default function NewGameForm({ addGame }) {
   const [title, setTitle] = useState('')
   const [cover, setCover] = useState('')
-  return (< form >
-    <div>
-      <label htmlFor="nameGame">Jogo: </label>
-      <input
-        type="text"
-        id='nameGame'
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-      />
-    </div>
-    <div>
-      <label htmlFor="cover">Capa: </label>
-      <input
-        type="text"
-        id='cover'
-        value={cover}
-        onChange={(e) => setCover(e.target.value)}
-      />
-    </div>
-    <button type='submit' onClick={handleDubmit}>Adicionar a Biblioteca</button>
-  </ form >)
+
+  const handleSubmit = (ev) => {
+    ev.preventDefault()
+    addGame({ title, cover })
+    setCover('')
+    setTitle('')
+  }
+
+
+  return (
+    < form onSubmit={handleSubmit} >
+      <TextInput value={title} setValue={setTitle}  label={'Nome'}/>
+      <TextInput value={cover} setValue={setCover} label={"Capa"}  />
+      <button type='submit'>Adicionar a Biblioteca</button>
+    </ form >)
 }

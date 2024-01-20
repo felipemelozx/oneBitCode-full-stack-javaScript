@@ -21,8 +21,6 @@ export default function App() {
       localStorage.setItem("obc-game-lib", JSON.stringify(newState))
       return newState
     })
-    setTitle('');
-    setCover('');
   }
 
   const removeGame = (id) => {
@@ -33,16 +31,13 @@ export default function App() {
     })
   }
 
-  const handleDubmit = (ev) => {
-    ev.preventDefault()
-    addGame({ title, cover })
-  }
+
   return (
     <div className="app">
       <h1>Biblioteca de jogos</h1>
       <NewGameForm
-      addGame={addGame}
-      handleDubmit={handleDubmit}
+        addGame={addGame}
+    
       />
       <div className="games">
         {games.map((game) => (
@@ -51,8 +46,8 @@ export default function App() {
               key={game.id}
               title={game.title}
               cover={game.cover}
-              onRemover={()=>removeGame(game.id)}
-              />
+              onRemover={() => removeGame(game.id)}
+            />
           </div>))}
       </div>
     </div>
