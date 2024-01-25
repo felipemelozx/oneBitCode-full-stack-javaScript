@@ -1,4 +1,4 @@
-export default function AdminHome() {
+export default function Home() {
   return (
     <main>
       <h1>Área Administrativa</h1>
