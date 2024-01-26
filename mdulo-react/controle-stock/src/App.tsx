@@ -1,15 +1,10 @@
-import Cart from "./components/Cart";
-
+import {  RouterProvider } from "react-router-dom";
+import router from "./router";
 
 export default function App() {
-
-
   return (
     <>
-      <section>
-        <Cart title={"ere"} amount= {10} />
-
-      </section>
+    <RouterProvider router={router} />
     </>
   )
 }

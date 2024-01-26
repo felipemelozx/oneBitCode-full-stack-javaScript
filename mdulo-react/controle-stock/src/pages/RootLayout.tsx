@@ -1,4 +1,4 @@
-
+import { Link, Outlet } from "react-router-dom"
 
 export default function RootLayout() {
   return (
@@ -11,7 +11,7 @@ export default function RootLayout() {
       </header>
       <main>
         <hr />
-        <Outlet />
+        <Outlet/>
       </main>
       <footer>
         <p>Feito com React Router DOM =D</p>
