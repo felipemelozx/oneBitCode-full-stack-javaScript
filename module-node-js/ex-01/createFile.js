@@ -9,5 +9,3 @@ export default function createFile (conteudo){
     console.log("Arquivo criado com sucesso.")
   })
 }
-
-createFile("ola,mundo")

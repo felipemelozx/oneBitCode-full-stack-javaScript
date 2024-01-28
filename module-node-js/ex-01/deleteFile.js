@@ -9,5 +9,3 @@ export default function deleteFile(name){
 
   })
 }
-
-deleteFile("meuarquivo.txt")

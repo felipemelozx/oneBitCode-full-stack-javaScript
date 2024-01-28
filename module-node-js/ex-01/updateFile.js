@@ -1,7 +1,7 @@
 import fs from "node:fs"
 
-export default function updateFile(name, conteudo){
-  fs.writeFile(name, conteudo, (err, data)=>{
+export default function updateFile(conteudo){
+  fs.writeFile("./meuarquivo.txt", 'conteudo', (err, data)=>{
     if(err){
       console.log("erro ao atualizar arquivo.")
       return
@@ -10,5 +10,3 @@ export default function updateFile(name, conteudo){
     console.log(data)
   })
 }
-
-updateFile("./meuarquivo.txt", "testando a funcao update file")
