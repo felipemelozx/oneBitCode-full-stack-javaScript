@@ -20,8 +20,7 @@ const router = createBrowserRouter([{
         { index: "new", element: <CreateItem /> },
         { index: ":id", element: <ShowItem /> },
         { index: ":id/update", element: <UpdateItem /> },]
-    },
-
+    }
   ]
 }])
 export default router
