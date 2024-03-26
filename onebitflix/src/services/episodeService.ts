@@ -8,7 +8,7 @@ export const episodeService = {
     const filePath = path.join(__dirname, '..', '..', 'uploads', videoUrl)
     const fileStat = fs.statSync(filePath)
 
-   
+
 
     if (range) {
       const parts = range.replace(/bytes=/, '').split('-')
