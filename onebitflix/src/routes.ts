@@ -11,6 +11,8 @@ router.post('/auth/register', authController.register)
 router.get('/categories', categoriesController.index)
 router.get('/categories/:id',categoriesController.show)
 
+router.post('/auth/register', authController.register)
+router.post('/auth/login', authController.login)
 
 router.get('/courses/newest', coursesController.newest)
 router.get('/courses/featured', coursesController.featured)
