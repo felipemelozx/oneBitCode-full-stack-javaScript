@@ -3,7 +3,7 @@ import { episodeService } from "../services/episodeService";
 
 
 export const episodesController = {
-  strem: async (req: Request, res: Response) => {
+  stream: async (req: Request, res: Response) => {
     const { videoUrl } = req.query
 
     try {
